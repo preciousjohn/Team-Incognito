@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: #12172b;
+   font-family: 'Work Sans', sans-serif;;
+}
+
+.container{
+    margin: 20px 40px;
+    color:#fff;
+}
+
+.head{
+    font-size: 60px;
+    color: #fff;
+}
+.head span{
+    font-style: italic;
+    font-size: 30px;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:50px;
+    margin-top: 20px;
+}
+
+.box .profile-pic{
+    height: 210px;
+    width:210px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile-pic:hover{
+    filter: grayscale(0);
+}
+
+.title{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.box h5{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    color: #ccc;
+}
+
+.box p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.attribute{
+    font-size: 14px;
+    color:#fff;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1150px){
+    .box{
+        grid-template-columns: repeat(2, 1fr);
+        gap:30px;
+}
+.head{
+    font-size: 35px;
+}
+.box .profile-pic{
+        height: 200px;
+        width:200px;
+        align-items: center;
+}
+.title, .box h5, .box p{
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 450px){
+    .box{
+        grid-template-columns: repeat(1, 1fr);
+        gap:30px;
+        align-items: center;
+}
+.head{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+.head span{
+    font-size: 18px;
+}
+.title{
+    font-size: 18px;
+}
+.box p{
+    font-size: 14px;
+}
+.box .profile-pic{
+    height: 150px;
+    width:150px;
+    align-items: center;
+}
+}
